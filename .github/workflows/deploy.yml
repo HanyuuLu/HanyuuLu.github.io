@@ -1,0 +1,23 @@
+name: CI
+
+on:
+    push:
+        branches:
+            - src
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Hexo Action
+      uses: sma11black/hexo-action@v1.0.0
+      with:
+        # Github user name
+        user_name: HanyuuLu # default is 
+        # Github email
+        user_email: HanyuuFurude@outlook.com # default is 
+        # The deploy key for Github Pages repo
+        deploy_key: ${{ secrets.DEPLOY_KEY }}
