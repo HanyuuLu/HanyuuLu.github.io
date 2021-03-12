@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Java GC 机制备忘 - HanyuuLu&#39;s page</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="hanyuulu.github.io/java_gc/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="description" content="GC  垃圾回收(Garbage Collection)是Java虚拟机(JVM)垃圾回收器提供的一种用于在空闲时间不定时回收无任何对象引用的对象占据的内存空间的一种机制。 垃圾回收回收的是无任何引用的对象占据的内存空间而不是对象本身。换言之，垃圾回收只会负责释放那些对象占有的内存。对象是个抽象的词，包括引用和其占据的内存空间。当对象没有任何引用时其占据的内存空间随即被收回备用，此时对象也就被销">
+<meta name="keywords" content="Java,GC">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Java GC 机制备忘">
+<meta property="og:url" content="hanyuulu.github.io/java_gc/index.html">
+<meta property="og:site_name" content="HanyuuLu&#39;s page">
+<meta property="og:description" content="GC  垃圾回收(Garbage Collection)是Java虚拟机(JVM)垃圾回收器提供的一种用于在空闲时间不定时回收无任何对象引用的对象占据的内存空间的一种机制。 垃圾回收回收的是无任何引用的对象占据的内存空间而不是对象本身。换言之，垃圾回收只会负责释放那些对象占有的内存。对象是个抽象的词，包括引用和其占据的内存空间。当对象没有任何引用时其占据的内存空间随即被收回备用，此时对象也就被销">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="/header.png">
+<meta property="og:updated_time" content="2021-03-12T08:22:58.542Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java GC 机制备忘">
+<meta name="twitter:description" content="GC  垃圾回收(Garbage Collection)是Java虚拟机(JVM)垃圾回收器提供的一种用于在空闲时间不定时回收无任何对象引用的对象占据的内存空间的一种机制。 垃圾回收回收的是无任何引用的对象占据的内存空间而不是对象本身。换言之，垃圾回收只会负责释放那些对象占有的内存。对象是个抽象的词，包括引用和其占据的内存空间。当对象没有任何引用时其占据的内存空间随即被收回备用，此时对象也就被销">
+<meta name="twitter:image" content="/header.png">
+<link rel="alternate" type="application/atom+xml" title="HanyuuLu&#39;s page" href="/atom.xml">
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+<link rel="stylesheet" href="/theme.242718f6f2e9a53c3dbd.css">
+<script src="/config.f0b273802b1c3bca8073.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body lang="zh-Hans">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><is-a></is-a>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

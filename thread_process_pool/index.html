@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Python进程池、线程池和进程间通信实践参考 - HanyuuLu&#39;s page</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="hanyuulu.github.io/thread_process_pool/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="description" content="业务需求 业务中有一个计算量比较大的、可以并行执行的操作，为了提升资源利用率，故考虑多进程分配。 性能：多线程&amp;lt;线程池&amp;lt;多进程&amp;lt;进程池  在Windows中创建一个进程耗费的时间以秒计算，故要避免频繁的进程创建销毁   业务流程  一个数据产生源，串行产生数据，速度快 数据源产生的数据需要比较长的时间进行计算才能得到结果 所有结果要汇总起来进行过滤和处理最终发放下游服务器">
+<meta name="keywords" content="Python,multprocessing,multthreading">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Python进程池、线程池和进程间通信实践参考">
+<meta property="og:url" content="hanyuulu.github.io/thread_process_pool/index.html">
+<meta property="og:site_name" content="HanyuuLu&#39;s page">
+<meta property="og:description" content="业务需求 业务中有一个计算量比较大的、可以并行执行的操作，为了提升资源利用率，故考虑多进程分配。 性能：多线程&amp;lt;线程池&amp;lt;多进程&amp;lt;进程池  在Windows中创建一个进程耗费的时间以秒计算，故要避免频繁的进程创建销毁   业务流程  一个数据产生源，串行产生数据，速度快 数据源产生的数据需要比较长的时间进行计算才能得到结果 所有结果要汇总起来进行过滤和处理最终发放下游服务器">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="/header.png">
+<meta property="og:updated_time" content="2021-03-12T08:22:58.614Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python进程池、线程池和进程间通信实践参考">
+<meta name="twitter:description" content="业务需求 业务中有一个计算量比较大的、可以并行执行的操作，为了提升资源利用率，故考虑多进程分配。 性能：多线程&amp;lt;线程池&amp;lt;多进程&amp;lt;进程池  在Windows中创建一个进程耗费的时间以秒计算，故要避免频繁的进程创建销毁   业务流程  一个数据产生源，串行产生数据，速度快 数据源产生的数据需要比较长的时间进行计算才能得到结果 所有结果要汇总起来进行过滤和处理最终发放下游服务器">
+<meta name="twitter:image" content="/header.png">
+<link rel="alternate" type="application/atom+xml" title="HanyuuLu&#39;s page" href="/atom.xml">
+<link href="//fonts.googleapis.com/css?family=Baloo+Bhaijaan|Inconsolata|Josefin+Sans|Montserrat" rel="stylesheet">
+<link href="/styles.d1f4718a192abf1f2afd.css" rel="stylesheet">
+<link rel="stylesheet" href="/theme.242718f6f2e9a53c3dbd.css">
+<script src="/config.f0b273802b1c3bca8073.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+<body lang="zh-Hans">
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><is-a></is-a>
+<script src="/runtime.caef73fae70e33459c5a.js"></script>
+<script src="/polyfills.28555e618578fe61f50a.js"></script>
+<script src="/main.7773219322474154c9eb.zh-Hans.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
